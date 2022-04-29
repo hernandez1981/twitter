@@ -4,7 +4,7 @@
   "description": "Proyecto realizado en LaunchX",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/jest/bin/jest"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hernandez1981/twitter/issues"
   },
-  "homepage": "https://github.com/hernandez1981/twitter#readme"
+  "homepage": "https://github.com/hernandez1981/twitter#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
 }
