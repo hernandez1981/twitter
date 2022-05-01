@@ -16,6 +16,14 @@ class UserService {
     static updateUserUsername(user, newUserName){
         user.username = newUserName;
     }
+
+    static getAllUsernames(users){
+        let userNames = [];
+        users.forEach(user => {
+            userNames.push(user.username);
+        });
+        return userNames;
+    }
 }
 
 module.exports = UserService
