@@ -1,10 +1,7 @@
 const User = require('./../../app/models/User');
 
 class UserView {
-    constructor(){
-
-    }
-
+        
     static createUser(payload) {        
         if (payload === null) {
             return {
@@ -26,14 +23,7 @@ class UserView {
             }
         }
 
-        // let user = new User();
-        // user.name = payload.name;
-        // user.username = payload.username;
-        // user.id = payload.id;
-        // return user;
-
-        // return new User(payload.id, payload.username, payload.name);
-
+        return new User(payload.id, payload.username, payload.name);
     }
 
 }
