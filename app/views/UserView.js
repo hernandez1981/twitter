@@ -12,12 +12,12 @@ class UserView {
             }
         }
 
-        // if (  payload.username === null || payload.name === null ||
-        //     payload.id === null ) {
-        //     return {
-        //         error : 'necesitan tener un valor válido'
-        //     }
-        // }
+        if (payload.username === null || payload.name === null ||
+            payload.id === null) {
+            return {
+                error : 'necesitan tener un valor válido'
+            }
+        }
 
         // if (  payload.username === undefined || payload.name === undefined  ||
         //     payload.id === undefined  ) {
